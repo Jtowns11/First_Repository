@@ -1,0 +1,55 @@
+<!--
+Creator: Jeffrey Townsend
+Date created: 10/15/2019
+Date last modified: 10/21/2019
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<header>
+	
+	</header>
+    <script type="text/javascript" src="LuckySevens.js"></script>
+	    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="container">
+    <h1>Lucky Sevens</h1>
+    <form name="numberFun" onsubmit="return validateItems();" 
+          class="form-inline">
+            <div class="form-group">
+                <label for="num1"><h2>Starting Bet: $</h2></label><br>
+                <input type="number" class="form-control" id="num1">
+            </div>
+                        
+            <button type="submit" id="submitButton" class="btn btn-default">Play</button>
+    </form>
+    <table id="results" class="table table-striped" style="display:none;">
+        <thead>
+            <tr>
+                <th><h2>Result</h2></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Starting Bet: </td>
+                <td>$<span id="addResult"></span></td>
+            </tr>
+            <tr>
+                <td>Total Rolls:</td>
+                <td><span id="rolls"></span></td>
+            </tr>
+            <tr>
+                <td>Highest Amount of Money Earned: </td>
+                <td>$<span id="maxMoney"></span></td>
+            </tr>
+            <tr>
+                <td>Roll Count at Max Money: </td>
+                <td><span id="maxRoll"></span></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

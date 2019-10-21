@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!--
+Name: Jeffrey Townsend
+Date Created: 10/9/2019
+Most recent revision: 10/21/2019
+-->
+
+<html lang="en">
+<header>
+		<head>
+			<title>Contact Us</title>
+			<link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+			<!-- add an icon library for a home button-->
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+			<hr />
+			<script type="text/JavaScript" src="Restaurant.js"></script>	
+			<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        rel="stylesheet" type="text/css" />
+		</head>
+</header>
+<body style="background-color:lavender">
+	<h1> Jeff's Restaurant</h1>
+<nav>
+	<!--create hyperlink buttons-->
+	<a class="btn badge-pill" href="Restaurant-Homepage.html"><i class="fa fa-home"></i>Home</a>
+	<a class="btn badge-pill" href="Restaurant-Menu.html">Menu</a>
+	<a class="btn badge-pill" href="Restaurant-ContactPage.html">Contact Us</a>
+	</nav>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+		<!--add bootstrap-->
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<style>
+		nav .btn {
+		background-color: #5b7d87;
+		color: #fef9ff;
+		}
+		nav .btn:hover {
+		font-weight: bold;
+		}
+		nav {
+	border-top: thin #5b7d87 solid;
+	border-bottom: thin #5b7d87 solid;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	}
+	</style>
+	</head>
+	<body>
+	<div class="container">
+	
+	</div>
+
+<section>
+
+	<form name="personalInformation" onsubmit="return validateItems(); class="form-inline">
+            <div class="form-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" class="form-control" id="firstName">
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name:</label>
+                <input type="text" class="form-control" id="lastName">
+            </div> 
+			<div class="form-group">
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="number" class="form-control" id="phoneNumber">
+            </div>
+<label for="contact">Reason for Inquiry:</label> <br />
+	<select id="contact" name="contact">
+	<!--Make a dropbox-->
+		<option value="default" selected>Catering</option>
+		<option value="private-party">Private Party</option>
+		<option value="feedback">Feedback</option>
+		<option value="other">Other</option>
+	</select>
+	<br />
+	<!--Make a textbox-->
+	<label for="info">Additional Information:</label><br />
+	<textarea id="info" name="info"></textarea><br />
+	<fieldset>
+	<!--Make a yes/no option-->
+		<legend>Have you been to the restaurant?</legend><br />
+		<input type="radio" id="choice1" name="response" value="yes">
+		<label for="choice1">Yes</label><br />
+		<input type="radio" id="choice2" name="response" value="no">
+		<label for="choice2">No</label><br />
+	</fieldset>
+	<fieldset>
+	<!--Make checkboxes-->
+		<legend>Best days to contact you:</legend><br />
+		<input type="checkbox" id="monday" name="days" value="monday">
+		<label for="monday">Monday</label><br />
+		<input type="checkbox" id="teusday" name="days" value="tuesday">
+		<label for="tuesday">Tuesday</label><br />
+		<input type="checkbox" id="wednesday" name="days" value="wednesday">
+		<label for="wednesday">Wednesday</label><br />
+		<input type="checkbox" id="thursday" name="days" value="thursday">
+		<label for="thursday">Thursday</label><br />
+		<input type="checkbox" id="friday" name="days" value="friday">
+		<label for="friday">Friday</label><br />
+		</fieldset>	
+		<!--Make a way to submit-->			
+            <button type="submit" id="submitButton" class="btn btn-default">Submit</button>
+    </form>
+</section>
+<footer>
+	<hr />
+	<p>Address: Fictional Address, Charlotte, NC, 28000</p>
+	<p>Phone Number: (111)-111-1111</p>
+	<p><strong>This website is best viewed with JavaScript enabled.</strong></p>
+</footer>	
+</body>
+</html>	
+
+
+
+
+
+
+
+</html>
